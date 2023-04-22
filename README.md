@@ -1,10 +1,11 @@
 # nBatonOSC: NCV で受け取ったコメントや関連情報を OSC で転送する プラグイン
 このプラグインを使うと、 NCV (Niconama Comment Viewer) で受け取ったコメントや関連情報を VirtualCast に OSC (Open Sound Control) で送信することができるようになります。  
+  
+![nBatonImage](/docs/nBatonImageJp.png)
 
 ## 必要環境
 1. NCV version α216 以上を推奨  
    ユーザー名取得の関係から α216 以上を推奨します。  
-   2023年4月16日現在、 α216 は「過去のバージョン・テスト版」の方に上げられています。  
    NCV の取得は[こちら (posite-c)](https://www.posite-c.com/) から  
 
 ## インストール
@@ -19,7 +20,7 @@
    設定ファイルに関して、基本的にユーザー側での作業はありません。  
    (参考: 既定のフォルダ「C:\Users\%ユーザー名%\AppData\Roaming\posite-c\NiconamaCommentViewer」は Windows の初期設定では隠しフォルダになっています。NCV のインストール先を変えた場合は違うフォルダかもしれません。「UserSetting.xml」と同じフォルダに自動作成されます。)  
 
-# アンインストール
+## アンインストール
 アンインストール手順は次の通り  
 1. 「nBatonOSC.dll」を削除  
    設定ファイル「nBatonOSC.txt」は上記隠しフォルダ内にあります。削除できる方は手動で削除してください。  
@@ -124,11 +125,12 @@ vci.osc.RegisterMethod('/vci/baton/mode', exampleMode, {vci.osc.types.Int32})
 
 # nBatonOSC: NCV plugin for transferring comments and related information by OSC.
 This is a plugin that allows you to send comments and related information received from NCV (Niconama Comment Viewer) to VirtualcCast using OSC (Open Sound Control) protocol.
+  
+![nBatonImage](/docs/nBatonImageEn.png)
 
 ## Requirements
 1. NCV version α216 or higher  
    α216 or higher is recommended to get better information about username.  
-   As of April 16, 2023, α216 is still listed in the "Past version, Test version".  
    You can get NCV from [here (posite-c)](https://www.posite-c.com/)
 
 ## Installation
